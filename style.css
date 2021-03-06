@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.button-to-top {
+    position: fixed;
+    right: 2vw;
+    bottom: 2vw;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 3px solid #06ccc2;
+    border-radius: 50%;
+}
+
+.button-to-top a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #06ccc2;
+}
+
+.wrapper-hero {
+    background-image: url("img/pexels-rudolf-jakkel-418831.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background {
+    background-color: rgba(48, 35, 95, 0.8);
+}
+
+.hero {
+    height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav .logo {
+    padding: 0 40px;
+    line-height: 100px;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+nav a {
+    padding: 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li:first-child a {
+    color: #06ccc2;
+}
+
+header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+}
+
+header h1 {
+    font-size: 50px;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header span {
+    display: block;
+    width: 20%;
+    height: 3px;
+    background-color: #06ccc2;
+    margin-bottom: 50px;
+}
+
+header p {
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+button {
+    border: 2px solid #06ccc2;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #06ccc2;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #06ccc2;
+    color: white;
+}
+
+
+.wrapper-story {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 50vh;
+}
+
+.wrapper-story .img {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.our-story {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.our-story h2 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.our-story p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.video {
+    width: 100%;
+    height: 50vh;
+    background-image: url("img/pexels-pixabay-290595.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.video div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 35, 95, 0.8);
+}
+
+.video p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .wrapper {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.wrapper div {
+    width: 33%;
+    padding: 5%;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.wrapper div:nth-child(3),
+.wrapper div:nth-child(6) {
+    border-right: none;
+}
+
+.wrapper div:nth-child(4),
+.wrapper div:nth-child(5),
+.wrapper div:nth-child(6) {
+    border-bottom: none;
+}
+
+.features h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.features span {
+    display: block;
+    width: 10%;
+    height: 3px;
+    background-color: #999;
+    margin: 15px;
+}
+
+.features p {
+    margin: 15px 0;
+    color: #999;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.wrapper h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.wrapper i {
+    font-size: 40px;
+    padding: 30px;
+}
+
+.team {
+    background-image: url("img/pexels-rudolf-jakkel-418831.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.wrapper-team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.wrapper-team h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrapper-team p {
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper-team span {
+    display: block;
+    width: 10%;
+    height: 2px;
+    background-color: #999;
+    margin: 10px 0 40px 0;
+}
+
+.people {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.img-wrapper {
+    width: 15vw;
+    height: auto;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.img-wrapper .image {
+    width: 100%;
+    height: 15vw;
+}
+
+.img-wrapper:nth-of-type(1) .image {
+    background-image: url("img/face1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-wrapper:nth-of-type(2) .image {
+    background-image: url("img/face2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-wrapper:nth-of-type(3) .image {
+    background-image: url("img/face3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-wrapper:nth-of-type(4) .image {
+    background-image: url("img/face4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.img-wrapper h4 {
+    color: white;
+    margin-top: 15px;
+}
+
+.img-wrapper p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.wrapper-team button {
+    margin: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #999;
+
+}
+
+.projects .works {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.works div {
+    width: 21%;
+    height: 200px;
+    background-color: #999;
+    flex-grow: 1;
+}
+
+.button {
+    margin: 0 auto;
+}
+
+.projects button {
+    margin: 40px;
+}
+
+.team-quotes {
+    background-image: url("img/pexels-rudolf-jakkel-418831.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-quotes-wrapper {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-quotes-wrapper h2 {
+    font-size: 40px;
+    margin: 40px;
+    color: white;
+}
+
+.team-quotes-wrapper p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    text-align: center;
+    color: #ddd;
+    padding: 20px;
+}
+
+.team-quotes-wrapper h3 {
+    margin-top: 40px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #ddd;
+}
+
+.team-quotes-wrapper h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.team-quotes-wrapper .image {
+    margin-top: 40px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-image: url("img/face1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    margin: 0 auto;
+    display: flex;
+
+    width: 80%;
+}
+
+.form {
+    width: 50%;
+    padding: 5%;
+}
+
+.form h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.form input,
+textarea {
+    width: 90%;
+}
+
+.form input {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #999;
+}
+
+.form textarea {
+    resize: none;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 5%;
+}
+
+.clients h2 {
+    width: 100%;
+    text-align: left;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clients p {
+    font-size: 35px;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+footer {
+    background-image: url("img/pexels-fauxels-3183183.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.info {
+    width: 30%;
+    padding: 5%;
+}
+
+.info h2,
+.address h2,
+.newsletter h2 {
+    color: #ddd;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info p,
+.address p,
+.newsletter p,
+.footer-terms p {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-wrapper i {
+    padding: 0 10px;
+}
+
+
+.address {
+    width: 30%;
+    padding: 5%;
+}
+
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 5%;
+}
+
+.newsletter form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    color: #ddd;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+
+}
+
+.socials-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.socials-wrapper div {
+    margin: 10px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+
+.socials-wrapper a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+
+}
+
+.socials-wrapper a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.footer-terms {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px;
+}
+
+.footer-terms p {
+    color: #ddd;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.footer-terms ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+.footer-terms li {
+    margin: 0 30px;
+}
+
+.footer-terms a {
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: block;
+}
