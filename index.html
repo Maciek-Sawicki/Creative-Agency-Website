@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tajam</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/71d4c605d7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -49,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <section class="wrapper-story" id="about">
+        <section class="wrapper-story" id="about" data-aos="fade">
             <div class="img"><img src="img/logo.png" alt="logo"></div>
             <div class="our-story">
                 <h2>Our story</h2>
@@ -71,43 +74,43 @@
             </div>
         </section>
         <section class="features" id="expertise">
-            <h2>Expertise</h2>
+            <h2 data-aos="fade">Expertise</h2>
 
-            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-            <span></span>
+            <p data-aos="fade">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+            <span data-aos="fade"></span>
             <div class="wrapper">
-                <div><i class="fas fa-desktop"></i>
+                <div data-aos="fade" data-aos-delay="100"><i class="fas fa-desktop"></i>
                     <h3>Web design & development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ipsa temporibus. Tempore
                         itaque
                         enim aliquid?</p>
                 </div>
-                <div><i class="fas fa-paint-brush"></i>
+                <div data-aos="fade" data-aos-delay="100"><i class="fas fa-paint-brush"></i>
                     <h3>Branding identity</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non corporis laborum odio nulla et
                         fugit.
                     </p>
                 </div>
-                <div><i class="fas fa-mobile-alt"></i>
+                <div data-aos="fade" data-aos-delay="100"><i class="fas fa-mobile-alt"></i>
                     <h3>Mobile app</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti explicabo rem excepturi
                         repellendus
                         at
                         molestias?</p>
                 </div>
-                <div><i class="fas fa-chart-pie"></i>
+                <div data-aos="fade" data-aos-delay="100"><i class="fas fa-chart-pie"></i>
                     <h3>Search engine optimalization</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore vel nesciunt assumenda iusto,
                         deserunt
                         vitae!</p>
                 </div>
-                <div><i class="fas fa-gamepad"></i>
+                <div data-aos="fade" data-aos-delay="100"><i class="fas fa-gamepad"></i>
                     <h3>Game development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatem, et quam nihil
                         porro
                         totam!</p>
                 </div>
-                <div><i class="far fa-heart"></i>
+                <div data-aos="fade" data-aos-delay="100"><i class="far fa-heart"></i>
                     <h3>Made with love</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam in maxime iusto nostrum expedita
                         quas.
@@ -255,6 +258,9 @@
 
     </div>
     <script src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
