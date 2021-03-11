@@ -1290,10 +1290,16 @@ footer {
 
 }
 
-@media (max-width: 533px) and (orientation: landscape) {
-    .hero {
-        height: 180vh;
+@media (orientation: landscape) and (max-height: 600px) {
+    .nav-links a {
+        font-size: 22px;
+        padding: 10px 5px;
     }
+}
 
-
+@media (orientation: landscape) and (max-height: 350px) {
+    .nav-links a {
+        font-size: 20px;
+        /* padding: 10px 5px; */
+    }
 }
