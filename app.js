@@ -23,6 +23,15 @@ const navSlide = () => {
     navLinks.forEach((link) => {
       link.addEventListener("click", menuFunction);
     });
-  };
-  
-  navSlide();
+};
+
+const mql = window.matchMedia('(max-width: 1200px)');
+
+function screenTest(e) {
+  if (e.matches) {
+    navSlide();
+  }
+}
+
+mql.addEventListener('change', screenTest);
+

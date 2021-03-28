@@ -165,10 +165,10 @@ nav a:hover {
     color: var(--lightcyan);
 }
 
-nav a:focus {
+/* nav a:focus {
     outline: 2px solid var(--lightcyan);
     outline-offset: 5px;
-}
+} */
 
 
 .nav-active {
