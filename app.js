@@ -27,11 +27,12 @@ const navSlide = () => {
 
 const mql = window.matchMedia('(max-width: 1200px)');
 
-function screenTest(e) {
+function windowMatch(e) {
   if (e.matches) {
     navSlide();
   }
 }
 
-mql.addEventListener('change', screenTest);
+mql.addEventListener('change', windowMatch);
+
 
