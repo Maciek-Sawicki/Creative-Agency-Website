@@ -27,12 +27,18 @@ const navSlide = () => {
 
 const mql = window.matchMedia('(max-width: 1200px)');
 
+if (window.innerWidth < 1200) {
+  navSlide();
+}
+
 function windowMatch(e) {
-  if (e.matches) {
+  if (e.matches || initialWidth < 1500) {
     navSlide();
   }
+
 }
 
 mql.addEventListener('change', windowMatch);
+
 
 
